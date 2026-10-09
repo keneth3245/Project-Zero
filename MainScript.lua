@@ -4,7 +4,7 @@
 local GameId = game.GameId
 
 local FreeScripts = {
-    [994732206] = "https://raw.githubusercontent.com/justgit067/Blox-Fruit-Script/main/Refs-Heads-Main-Games-BloxFruits.lua",
+    [994732206] = "https://raw.githubusercontent.com/keneth3245/Project-Zero/refs/heads/main/Refs-Heads-Main-Games-BloxFruits.lua",
 }
 
 local function LoadFreeScript()
