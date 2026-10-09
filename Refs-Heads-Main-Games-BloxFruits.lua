@@ -7195,7 +7195,7 @@ Restock: %s
 			OnAutoLoadScript = function()
 				if not tbl.AutoLoadScriptonLoad then return end
 				if not RequireProjectZeroAPI("queue_on_teleport", "Runtime", "OnAutoLoadScript", true) then return end
-				local str5 = string.format(" task.wait(1) getgenv().Team = \"%s\" loadstring(game:HttpGet(\"https://raw.githubusercontent.com/justgit067/Blox-Fruit-Script/main/Refs-Heads-Main-Games-BloxFruits.lua\"))() ", tbl.TeamSelectLoad or "Pirates")
+				local str5 = string.format(" task.wait(1) getgenv().Team = \"%s\" loadstring(game:HttpGet(\"https://raw.githubusercontent.com/keneth3245/Project-Zero/refs/heads/main/Refs-Heads-Main-Games-BloxFruits.lua\"))() ", tbl.TeamSelectLoad or "Pirates")
 				local queued = false
 				if type(syn) == "table" and type(syn.queue_on_teleport) == "function" then queued = pcall(syn.queue_on_teleport, str5) end
 				if not queued and type(queue_on_teleport) == "function" then queued = pcall(queue_on_teleport, str5) end
@@ -15099,7 +15099,7 @@ Restock: %s
 		task.wait(1)
 		tbl6:SendNotify("Project Zero (INFO)", "Project Zero • Premium Features • Keyless", 8)
 
-		local weeboURL = "https://raw.githubusercontent.com/justgit067/Blox-Fruit-Script/main/BloxFruitModule-Preload-Weebo.lua"
+		local weeboURL = "https://raw.githubusercontent.com/keneth3245/Project-Zero/refs/heads/main/BloxFruitModule-Preload-Weebo.lua"
 		local ok, result = xpcall(function()
 			local response = game:HttpGet(weeboURL)
 			if type(response) ~= "string" or #response == 0 then error("Empty response") end
