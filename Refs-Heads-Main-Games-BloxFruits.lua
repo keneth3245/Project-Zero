@@ -15015,8 +15015,7 @@ Restock: %s
 				print("Hop")
 				joinAPI("legendarysword", 2)
 			end
-		end, flag2)
-	end
+				end, flag2)
 		return true
 	end
 
