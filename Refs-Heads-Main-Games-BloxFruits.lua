@@ -15045,7 +15045,11 @@ Restock: %s
 			ProjectZeroReportError("Main Script", arg, "Refs-Heads-Main-Games-BloxFruits.lua", "Initialization function is missing.")
 			return false
 		end
-		local ok, result = xpcall(function() return v22(tbl6, ...) end, function(err)
+		local packedArgs = table.pack(...)
+
+    local ok, result = xpcall(function()
+            return v22(tbl6, table.unpack(packedArgs, 1, packedArgs.n))
+        end, function(err)
 			return tostring(err) .. "\n" .. ((debug and debug.traceback and debug.traceback()) or "No traceback available")
 		end)
 		if not ok then
